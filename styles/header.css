@@ -1,0 +1,87 @@
+.header-flexbox {
+
+  height: 70px;
+  background-color: rgb(30, 30, 30);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title-div{
+  color: rgb(216, 216, 216);
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo-picture {
+  margin-top: 5px;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  object-fit: contain;
+  margin-left: 5px;
+}
+
+.logo-div{
+  width: 70px;
+  margin-left: 10px;
+}
+
+.ecell-title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.tabs-div{
+  width: 600px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tabs-elements {
+  color: rgb(216, 216, 216);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(30, 30, 30);
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 18px;
+  padding-right: 18px;
+  height: 40px;
+
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+.tabs-elements:hover {
+  background-color: rgb(41, 41, 41);
+  border-color: rgb(45, 45, 45);
+}
+
+.tabs-elements:active {
+  background-color: rgb(20, 20, 20);
+  border-color: rgb(77, 77, 77);
+}
+
+.login-div{
+  padding-left: 20px;
+  padding-right: 20px;
+}
