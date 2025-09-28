@@ -8,6 +8,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+
 }
 
 .title-div{
@@ -28,7 +35,7 @@
 
 .logo-div{
   width: 70px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .ecell-title{
