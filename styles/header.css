@@ -1,7 +1,7 @@
 .header-flexbox {
 
   height: 70px;
-  background-color: rgb(30, 30, 30);
+  background-color: rgba(21, 153, 186, 0.1);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 
@@ -14,6 +14,11 @@
   right: 0;
   top: 0;
   z-index: 10;
+
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
 
 }
 
@@ -40,9 +45,17 @@
 
 .ecell-title{
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 1000;
+  font-size: 26px;
   padding-left: 10px;
+
+  background: linear-gradient(
+    120deg,
+    hsl(260 70% 70%),
+    hsl(0 100% 80%)
+  );
+  background-clip: text;
+  color: transparent;
 }
 
 .tabs-div{
@@ -59,13 +72,7 @@
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
 
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(30, 30, 30);
+  border-radius: 20px;
 
   display: flex;
   align-items: center;
@@ -75,17 +82,16 @@
   height: 40px;
 
   cursor: pointer;
-  transition: background-color 0.25s, border-color 0.25s;
+  transition: background-color 0.25s;
 }
 
 .tabs-elements:hover {
-  background-color: rgb(41, 41, 41);
-  border-color: rgb(45, 45, 45);
+  background-color: rgb(21, 153, 186, 0.3);
 }
 
 .tabs-elements:active {
-  background-color: rgb(20, 20, 20);
-  border-color: rgb(77, 77, 77);
+  background-color: rgb(21, 153, 186, 0.5);
+  border-color: rgb(21, 153, 186);
 }
 
 .login-div{

@@ -21,7 +21,8 @@
 }
 
 .login-button:hover {
-  background-color: rgb(30, 30, 30);
+  background-color: rgb(30, 30, 30, 0.1);
+  backdrop-filter: blur(10px);
   color: rgb(30, 184, 223);
   border-color: rgb(30, 184, 223);
 
