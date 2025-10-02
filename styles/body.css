@@ -22,7 +22,16 @@ body{
 }
 
 .secondary-content {
-  height: 200px;
+
+  background-color: rgb(30, 30, 30);
+  width: 98%;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 16px;
+  padding-bottom: 6px;
+  border-radius: 5px;
+  padding: 20px;
+  height: 240px;
 }
 
 .title-event {
@@ -30,7 +39,7 @@ body{
 }
 
 .upcoming-events-holder,
-.info-holder {
+.startups-holder {
   display: flex;
   align-items: center;
 
@@ -41,7 +50,12 @@ body{
   height: 200px;
 }
 
-.upcoming-events-div {
+.startups-holder {
+  margin-top: 0px;
+}
+
+.upcoming-events-div,
+.startups-div {
   display: flex;
   align-items: center;
 
@@ -61,10 +75,19 @@ body{
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.089);
 }
 
-.upcoming-events-div:hover {
+.startups-div {
+  height: 120px;
+}
+
+.upcoming-events-div:hover,
+.startups-div:hover {
   height: 170px;
   margin-left: 6px;
   margin-right: 6px;
+}
+
+.startups-div:hover {
+  height: 140px;
 }
 
 .text-div {
@@ -102,4 +125,20 @@ body{
 
 .info-holder {
   background-color: rgb(30, 30, 30);
+}
+
+.featured-startups {
+  margin-top: 20px;
+  margin-left: 24px;
+  font-size:  22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 650;
+
+  background: linear-gradient(
+    120deg,
+    hsl(260 70% 70%),
+    hsl(0 100% 80%)
+  );
+  background-clip: text;
+  color: transparent;
 }
