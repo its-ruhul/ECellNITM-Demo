@@ -8,7 +8,6 @@ body{
 
 .main-content,
 .secondary-content {
-  background-color: rgb(30, 30, 30);
 
   height: 660px;
   width: 98%;
@@ -20,6 +19,13 @@ body{
 
   border-radius: 5px;
 }
+
+.main-content {
+  background-image: url('/photos/background1.jpg');
+  background-size: cover;
+
+}
+
 
 .secondary-content {
 
